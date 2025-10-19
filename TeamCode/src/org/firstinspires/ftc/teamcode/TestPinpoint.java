@@ -75,6 +75,7 @@ public class TestPinpoint extends LinearOpMode {
             telemetry.addData("Pinpoint Pos", "x: %.1f  y: %.1f  h: %.1f", pinX, pinY, pinH);
             telemetry.addData("Pinpoint Vel", "x: %.1f  y: %.1f  h: %.1f", pinVX, pinVY, pinVH);
             telemetry.addData("Pinpoint Encoders", "X: %d  Y: %d", pinPoint.getEncoderX(), pinPoint.getEncoderY());
+            telemetry.addData("Device Scalar :", pinPoint.getYawScalar());
 
             telemetry.update();
 
